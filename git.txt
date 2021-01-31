@@ -1,0 +1,61 @@
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+other commands
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git push -u origin main
+git remote add origin main (url)
+
+New repo
+…or create a new repository on the command line
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/username/test.git
+git push -u origin main
+                
+…or push an existing repository from the command line
+//remote repo
+first create a new repo on github
+git remote add origin https://github.com/username/test.git
+git remote // to view all remote repository
+git remote -v // to view url
+git branch -M <branchname> //to create branch
+git push -u origin main //push main branch to origin
+git push -u origin <branchname>
+
+
+git init //to intiialize new project
+git status //to view status
+git add <file name> //to add file in staged area
+git add -A //to add all files
+git commit -m "message" //to commit
+git checkout -f //to restore all files to last commit form)
+git log //details of all commits
+git log -2 //to view last two commits
+git log -p -2 //-p to view changes also
+git diff // to view diff in staged files and changes
+git diff --staged// staging are vs last commit
+git rm <filename> //to delete file from staging area and hard disk
+git rn --cached //to remove only from staging area
+git status -s //short status
+touch .gitignore //in this file you can write the name of the files which will be ignored
+Eg: <filename> //ignores all files with this name
+*.extension //ignores all files with this extension
+/filename.extension //ignores file in the gitignore folder and not in subfolders.
+/folder
+
+
+git branch //branch are copies: this command shows branches
+git branch branchname //creates a new branch
+git checkout branchname //switch to that branch
+git merge branch1 //merges commits of branch1 with current branch
+git checkout -b <branchname> //this command creates new branch and also switches to that branch
+
+
+Hello from surface

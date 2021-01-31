@@ -1,0 +1,43 @@
+Steps to create new repository and connect it with remote repository
+first create a new repository on github
+echo "# my_blog" >> README.md
+git init                        (To initialize new project)
+git status                      (To view status)
+git add <file name>             (To add file in staging area)
+git add -A                      (To add all  files to staging area)
+git commit -m "first commit"    (To commit)
+git remote add origin <Link>.git  
+git push -u origin main
+
+git status -s                   (Status in short)
+git checkout <filename>         (To restore a file to last commit form)
+git checkout -f                 (To restore all file to last commit form)
+git log                         (details of all commits)
+git log -2                      (to view details of last 2 commits)
+git log -p -2                   (-p to view changes also)
+git diff                        (To view difference in staged files and local changes)
+git diff --staged               (Diff b/w staged files and last commited files)
+git rm <file name>              (to delete file from staging area and hard disk)
+git rm --cached                 (to remove only from staging area)
+
+.gitignore file                 (In this file you can write the names of those files which will be ignored by git as if they do not exist)
+touch .gitignore                (to create .gitignore file)
+Eg: <filename>.<extension>      (Ignores all files with this name even in the sub directories)
+*.<extension>                   (Ignores all files with this extension)
+/<filename>.<extension>         (ignores the file in the folder containing .gitignore file)
+/<foldername>                   (ignores this folder in the directory containing .gitignore file)
+
+git branches are nothing but copies:
+git branch                      (to view all branches)
+git branch <branchname>         (creates a new branch)
+git checkout <branchname>       (switch to that branch)
+git merge <branchname>          (merges commits of <branchname> with current branch)
+git checkout -b <branch name>   (creates new branch and also switches to that branch)
+
+Remote repositories:
+git remote add origin <Link>.git  (to connect local repository with remote repository)
+git remote                      (to view all remote repositories)
+git remote -v                   (to view URL of remote repositories)
+git push origin <branch name>   (to push repository to remote repository)
+git push origin main          (to push main branch to remote repository)
+git push -u origin <branch name>       (u flag will help you to push directly to that repository the next time you just have to write "git push" instead of full command)
